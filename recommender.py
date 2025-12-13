@@ -17,7 +17,7 @@ def build_similarity_model(csv_path: str):
     Builds TF-IDF matrix only (NO full similarity matrix).
     Safe for large datasets and cloud deployment.
     """
-    df = pd.read_csv(csv_path)
+    df = pd.read_csv(csv_path).head(10000)
 
     required_cols = {"song", "artist", "text"}
     if not required_cols.issubset(df.columns):
