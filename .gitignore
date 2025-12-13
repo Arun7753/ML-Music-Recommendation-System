@@ -1,0 +1,24 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Cache
+.cache
+
+# VS Code
+.vscode/
+
+# Models / Pickle files
+Model.ipynb
+
+# Environment/config
+.env
+.streamlit/secrets.toml
+venv
+
+
